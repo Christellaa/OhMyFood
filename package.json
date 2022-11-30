@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OpenClassrooms - Intégrateur Web\r Projet 4 - Améliorez l'interface d'un site mobile avec des animations CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christellaa/OhMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Christellaa/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Christellaa/OhMyFood#readme"
+}
