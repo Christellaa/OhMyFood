@@ -1,0 +1,29 @@
+footer {
+    padding: 22px 0 33px 25px;
+    color: white;
+    background-color: #353535;
+}
+
+.footer__logo {
+    width: 137px;
+    margin-bottom: 25px;
+}
+
+.footer__icon {
+    margin-right: 11px;
+    width: 11px;
+}
+
+.footer--margin {
+    margin-bottom: 7px;
+}
+
+.direction-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.no-decoration {
+    text-decoration: none;
+    color: white;
+}
