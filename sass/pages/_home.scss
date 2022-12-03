@@ -1,3 +1,41 @@
+/*#region POSITION */
+
+.bg-position {
+    background-color: #EAEAEA;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 12px;
+}
+
+.position__text {
+    display: inline;
+    margin-left: 15px;
+}
+
+/*#endregion POSITION */
+
+/*#region RESERVATION */
+
+.reservation {
+    text-align: center;
+    padding: 39px 0 57px 0;
+    background-color: #F7F7F7;
+}
+
+.reservation__desc {
+    margin-bottom: 30px;
+}
+
+/*#endregion RESERVATION */
+
+/*#region PRESENTATION */
+
 .no-decoration {
     list-style: none;
     border-style: none;
@@ -47,3 +85,5 @@ ul > li {
 .img--padding {
     padding-right: 27px;
 }
+
+/*#endregion PRESENTATION*/
