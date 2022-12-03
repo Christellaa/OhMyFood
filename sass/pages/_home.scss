@@ -7,16 +7,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.icon {
-    width: 12px;
+    gap: 17px;
 }
 
 .position__text {
-    display: inline;
-    margin-left: 15px;
+    border-style: none;
+    background-color:  #EAEAEA;
+    width: 110px;
+    color: #353535;
 }
+
 
 /*#endregion POSITION */
 
