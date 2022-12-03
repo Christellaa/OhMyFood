@@ -45,10 +45,9 @@
 }
 
 .icon__heart {
-    width: 21px;
-    height: 21px;
     align-self: center;
     position: absolute;
     right: 25px;
-    bottom: 40px;
+    bottom: 45px;
+    transform: scale(1, 1.3)
 }
