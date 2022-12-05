@@ -4,6 +4,10 @@ footer {
     background-color: #353535;
 }
 
+footer a {
+    color: white;
+}
+
 .footer__logo {
     margin: 0 0 25px 0;
     font-size: 18px;
@@ -25,5 +29,4 @@ footer {
 
 .no-decoration {
     text-decoration: none;
-    color: white;
 }
