@@ -1,0 +1,15 @@
+@mixin desktop {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+/*@mixin edges-margins {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &:nth-child(4n),&:nth-child(4n+1), &:nth-child(4n+2) {
+        margin-left: 196px;
+        margin-right: 196px;
+    }
+}*/

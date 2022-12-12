@@ -1,10 +1,13 @@
 .title--size {
     font-size: 24px;
+
+    @include desktop {
+        font-size: 40px;
+    }
 }
 
 .size-primary {
     font-size: 18px;
-    font-weight: 700;
 }
 
 .size-secondary {
