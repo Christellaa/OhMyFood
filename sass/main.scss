@@ -1,9 +1,10 @@
 @import "utils/mixins";
 
 @import "base/colors";
-@import "base/fonts";
 @import "base/sizes";
+@import "base/fonts";
 
+@import "components/loader";
 @import "components/back-button";
 @import "components/button";
 @import "components/restaurants";

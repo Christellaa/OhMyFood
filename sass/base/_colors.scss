@@ -3,10 +3,10 @@ $bg-position: #EAEAEA;
 $bg-presentation__numbers: #9356DC;
 $bg-last-presentation: #F5EDFF;
 $bg-footer: #353535;
-$bg-pink: #ff79da;
-$bg-gradient: linear-gradient(356deg,rgba(155, 89, 220, 1) 0%,rgba(167, 127, 216, 1) 33%, rgba(255, 121, 218, 1) 100%);
+$bg-gradient: linear-gradient(356deg,
+    rgba(155, 89, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%);
 $bg-checked: #99E2D0;
-
 $color-primary: #ffffff;
 $color-secondary: #008776;
 $color-tertiary: #353535;

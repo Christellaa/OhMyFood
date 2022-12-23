@@ -1,0 +1,115 @@
+.loader {
+    background-color: #ffffff;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: disappear 1000ms 2700ms forwards;
+}
+
+@keyframes disappear {
+    100% {
+        opacity: 0;
+        transform: scale(2,2);
+        pointer-events: none;
+    }
+}
+
+.fa-bell {
+    position: absolute;
+    top: 40px;
+    font-size: 50px;
+    z-index: -1;
+    color: rgb(233, 161, 173);
+    animation: shake .5s infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+
+    20%, 60% {
+        transform: rotate(6deg);
+    }
+
+    40%, 80% {
+        transform: rotate(-6deg);
+    }
+}
+
+.loader__items {
+    display: grid;
+    justify-items: center;
+    position: relative;
+}
+
+.loader__items__cloche__top {
+    background-color: rgb(183, 102, 230);
+    height: 15px;
+    width: 20px;
+    border-radius: 100% 100% 0 0;
+    clip-path: polygon(50% 0%,100% 16%,63% 55%,100% 94%,50% 100%,0% 94%,39% 55%,0% 16%);
+    position: relative;
+    top: 2px;
+    animation: open-cloche-top 3s cubic-bezier(.51,.02,.3,1.09) forwards;
+}
+
+@keyframes open-cloche-top {
+   50% {
+        transform: translate(-40px, -32px) rotate(-20deg);
+   }
+
+    100% {
+        transform: translate(-140px, -35px) rotate(-60deg);
+    }
+}
+
+.loader__items__cloche {
+    background-color: rgb(204, 137, 243);
+    box-shadow: inset 7px 0px 7px 0px #c24cedc2;
+    height: 90px;
+    border-radius: 100px 100px 0 0;
+    width: -webkit-fill-available;
+    animation: open-cloche 3s cubic-bezier(.51,.02,.3,1.09) forwards;
+}
+
+@keyframes open-cloche {
+    50% {
+         transform: translate(-20px, -35px) rotate(-20deg);
+    }
+ 
+     100% {
+         transform: translate(-100px, -55px) rotate(-60deg);
+     }
+ }
+
+.loader__items__plate__top {
+    top: 50px;
+    background-color: #9356dc;
+    height: 10px;
+    width: 220px;
+    border-radius: 10px 10px 100px 100px;
+    position: absolute;
+    top: 98px;
+}
+
+.loader__items__plate {
+    background-color: #8a48da;
+    height: 10px;
+    width: 140px;
+    border-radius: 0 0 10px 10px;
+}
+
+.loader__items__plate__shadow {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 180px;
+    height: 10px;
+    border-radius: 80%;
+    position: absolute;
+    top: 113px;
+    z-index: -1;
+}
