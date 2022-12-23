@@ -2,6 +2,13 @@ footer {
     padding: 22px 0 33px 25px;
     color: white;
     background-color: #353535;
+
+    @include desktop {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 52px 0 43px 10px;
+    }
 }
 
 footer a {
@@ -11,6 +18,13 @@ footer a {
 .footer__logo {
     margin: 0 0 25px 0;
     font-size: 18px;
+
+    @include desktop {
+        order: 2;
+        margin: 0 10% 0 70px;
+        position: relative;
+        top: 1.2;
+    }
 }
 
 .footer__icon {
@@ -20,11 +34,21 @@ footer a {
 
 .footer--margin {
     margin-bottom: 7px;
+
+    @include desktop {
+        margin-bottom: 0;
+    }
 }
 
 .direction-column {
     display: flex;
     flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+    }
 }
 
 .no-decoration {

@@ -6,6 +6,8 @@ body {
 .edges--margin {
     margin-left: 20px;
     margin-right: 20px;
+
+    @include edges--margin-desktop;
 }
 
 /*#region POSITION */
@@ -69,6 +71,10 @@ body {
     grid-template: auto / 1fr;
     gap: 24px;
     padding-inline-start: 0;
+
+    @include desktop {
+        grid-template: auto / repeat(3, 1fr);
+    }
 }
 
 .presentation__grid > li {
