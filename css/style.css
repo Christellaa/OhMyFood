@@ -326,6 +326,9 @@ footer {
 footer a {
   color: white;
 }
+footer a:hover {
+  text-decoration: underline;
+}
 
 .footer__logo {
   margin: 0 0 25px 0;
