@@ -1,10 +1,9 @@
 main {
-    background-color: #F7F7F7;
+    background-color: $bg-primary;
     padding: 54px 0 64px 0;
 
     .restaurants__grid {
-        display: grid;
-        grid-template: auto / 1fr;
+        @include grid-column;
         gap: 24px;
 
         @include desktop {
@@ -32,15 +31,11 @@ main {
     }
 }
 
-.no-decoration {
-    text-decoration: none;
-}
-
 .restaurants__card {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     height: 251px;
-    position: relative;
+    @include position-relative;
 
     @include desktop {
         width: 335px;
@@ -55,29 +50,31 @@ main {
 }
 
 .restaurants__new {
-    position: absolute;
+    @include position-absolute;
     right: 15px;
     padding: 8px 12px;
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    color: #008766;
+    color: $color-secondary;
     font-size: 14px;
     background-color: #99E2D0;
-    cursor: pointer;
+    @include cursor-pointer;
 }
 
 .restaurants__card__desc {
     margin-left: 13px;
     margin-bottom: 12px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color: black;
+    @include direction-column;
+    @include position-relative;
+    color: #000000;
+}
+
+.restaurants__card > a {
+    @include no-decoration;
 }
 
 .restaurants__card__title {
     margin: 16px 0 5px 0;
-    text-decoration: none;
 }
 
 .restaurants__card__location {
@@ -85,18 +82,21 @@ main {
 }
 
 .fa-heart {
-    position: absolute;
+    @include position-absolute;
     font-size: 30px;
     right: 30px;
     bottom: 10px;    
 
     &:hover {
-    background: linear-gradient(200deg,rgba(155, 89, 220, 1) 0%,rgba(167, 127, 216, 1) 25%, rgba(255, 121, 218, 1) 100%);
+    background: linear-gradient(200deg,
+        rgba(155, 89, 220, 1) 0%,
+        rgba(167, 127, 216, 1) 25%,
+        rgba(255, 121, 218, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
     animation: heart-fill 500ms;
-    cursor: pointer;
+    @include cursor-pointer;
     }
 }
 

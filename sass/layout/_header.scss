@@ -8,12 +8,10 @@
 }
 
 header {
-    position: relative;
+    @include position-relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     height: 63px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    @include flexbox-center;
     
     @include desktop {
         height: 96px;

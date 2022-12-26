@@ -1,12 +1,10 @@
 .loader {
-    background-color: #ffffff;
+    background-color: $color-primary;
     height: 100vh;
     position: fixed;
     inset: 0;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox-center;
     animation: disappear 1000ms 2700ms forwards;
 }
 
@@ -19,7 +17,7 @@
 }
 
 .fa-bell {
-    position: absolute;
+    @include position-absolute;
     top: 40px;
     font-size: 50px;
     z-index: -1;
@@ -42,9 +40,9 @@
 }
 
 .loader__items {
-    display: grid;
+    @include grid;
     justify-items: center;
-    position: relative;
+    @include position-relative;
 }
 
 .loader__items__cloche__top {
@@ -53,7 +51,7 @@
     width: 20px;
     border-radius: 100% 100% 0 0;
     clip-path: polygon(50% 0%,100% 16%,63% 55%,100% 94%,50% 100%,0% 94%,39% 55%,0% 16%);
-    position: relative;
+    @include position-relative;
     top: 2px;
     animation: open-cloche-top 3s cubic-bezier(.51,.02,.3,1.09) forwards;
 }
@@ -89,16 +87,16 @@
 
 .loader__items__plate__top {
     top: 50px;
-    background-color: #9356dc;
+    background-color: $bg-presentation__numbers;
     height: 10px;
     width: 220px;
     border-radius: 10px 10px 100px 100px;
-    position: absolute;
+    @include position-absolute;
     top: 98px;
 }
 
 .loader__items__plate {
-    background-color: #8a48da;
+    background-color: rgb(138, 72, 218);
     height: 10px;
     width: 140px;
     border-radius: 0 0 10px 10px;
@@ -109,7 +107,7 @@
     width: 180px;
     height: 10px;
     border-radius: 80%;
-    position: absolute;
+    @include position-absolute;
     top: 113px;
     z-index: -1;
 }

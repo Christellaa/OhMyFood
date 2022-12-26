@@ -1,12 +1,12 @@
 .button {
-    border-radius: 25px;
+    @include button-border-radius;
     padding: 13px 20px;
     color: $color-primary;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     background-image: $bg-gradient;
-    border-style: none;
+    @include no-decoration;
     font-family: 'Roboto', sans-serif;
-    cursor: pointer;
+    @include cursor-pointer;
     transition: opacity 1s, box-shadow 1s;
 
     &:hover {

@@ -1,22 +1,18 @@
 footer {
     padding: 22px 0 33px 25px;
-    color: white;
-    background-color: #353535;
+    color: $color-primary;
+    background-color: $color-tertiary;
 
     @include desktop {
-        display: flex;
+        @include flexbox-center-cross-axis;
         justify-content: flex-end;
-        align-items: center;
         padding: 52px 0 43px 10px;
     }
 }
 
 footer a {
-    color: white;
-    
-    &:hover {
-        text-decoration: underline;
-    }
+    color: $color-primary;
+    @include link-hover;
 }
 
 .footer__logo {
@@ -26,7 +22,7 @@ footer a {
     @include desktop {
         order: 2;
         margin: 0 10% 0 70px;
-        position: relative;
+        @include position-relative;
         top: 1.2;
     }
 }
@@ -45,16 +41,10 @@ footer a {
 }
 
 .direction-column {
-    display: flex;
-    flex-direction: column;
-
+    @include direction-column;
     @include desktop {
-        flex-direction: row;
+        @include direction-row;
+        @include flexbox-center-cross-axis;
         gap: 40px;
-        align-items: center;
     }
-}
-
-.no-decoration {
-    text-decoration: none;
 }

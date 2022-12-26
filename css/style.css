@@ -124,7 +124,7 @@ body {
 }
 .loader__items__plate__top {
   top: 50px;
-  background-color: #9356dc;
+  background-color: #9356DC;
   height: 10px;
   width: 220px;
   border-radius: 10px 10px 100px 100px;
@@ -133,7 +133,7 @@ body {
 }
 
 .loader__items__plate {
-  background-color: #8a48da;
+  background-color: rgb(138, 72, 218);
   height: 10px;
   width: 140px;
   border-radius: 0 0 10px 10px;
@@ -150,11 +150,14 @@ body {
 }
 
 .back-button {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   border-style: none;
+  list-style: none;
+  text-decoration: none;
   padding: 14px 16px;
+  cursor: pointer;
 }
 
 .button {
@@ -164,6 +167,8 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(356deg, rgb(155, 89, 220) 0%, rgb(255, 121, 218) 100%);
   border-style: none;
+  list-style: none;
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   transition: opacity 1s, box-shadow 1s;
@@ -203,10 +208,6 @@ main .restaurants__grid {
   }
 }
 
-.no-decoration {
-  text-decoration: none;
-}
-
 .restaurants__card {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
@@ -232,7 +233,7 @@ main .restaurants__grid {
   padding: 8px 12px;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  color: #008766;
+  color: #008776;
   font-size: 14px;
   background-color: #99E2D0;
   cursor: pointer;
@@ -244,12 +245,17 @@ main .restaurants__grid {
   display: flex;
   flex-direction: column;
   position: relative;
-  color: black;
+  color: #000000;
+}
+
+.restaurants__card > a {
+  border-style: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .restaurants__card__title {
   margin: 16px 0 5px 0;
-  text-decoration: none;
 }
 
 .restaurants__card__location {
@@ -311,20 +317,23 @@ header {
 
 footer {
   padding: 22px 0 33px 25px;
-  color: white;
+  color: #ffffff;
   background-color: #353535;
 }
 @media screen and (min-width: 769px) {
   footer {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     padding: 52px 0 43px 10px;
   }
 }
 
 footer a {
-  color: white;
+  color: #ffffff;
+  border-style: none;
+  list-style: none;
+  text-decoration: none;
 }
 footer a:hover {
   text-decoration: underline;
@@ -364,13 +373,10 @@ footer a:hover {
 @media screen and (min-width: 769px) {
   .direction-column {
     flex-direction: row;
-    gap: 40px;
+    display: flex;
     align-items: center;
+    gap: 40px;
   }
-}
-
-.no-decoration {
-  text-decoration: none;
 }
 
 body {
@@ -396,13 +402,15 @@ body {
   text-align: center;
   height: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 17px;
 }
 
 .position__text {
   border-style: none;
+  list-style: none;
+  text-decoration: none;
   background-color: #EAEAEA;
   width: 135px;
   color: #353535;
@@ -435,11 +443,6 @@ body {
   padding: 48px 0 68px 0;
 }
 
-.no-decoration {
-  list-style: none;
-  border-style: none;
-}
-
 .presentation__grid {
   display: grid;
   grid-template: auto/1fr;
@@ -454,6 +457,9 @@ body {
 
 .presentation__grid > li {
   position: relative;
+  border-style: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .presentation__div__numbers {
@@ -466,7 +472,7 @@ body {
   border-radius: 40px;
   padding: 1px 6px;
   margin: auto;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #9356DC;
 }
 

@@ -14,20 +14,18 @@ body {
 /*#region POSITION */
 
 .bg-position {
-    background-color: #EAEAEA;
-    text-align: center;
+    background-color: $bg-position;
+    @include text-center;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox-center;
     gap: 17px;
 }
 
 .position__text {
-    border-style: none;
-    background-color:  #EAEAEA;
+    @include no-decoration;
+    background-color: $bg-position;
     width: 135px;
-    color: #353535;
+    color: $color-tertiary;
     font-family: 'Roboto', sans-serif;
     
     &:focus-visible {
@@ -40,9 +38,9 @@ body {
 /*#region RESERVATION */
 
 .reservation {
-    text-align: center;
+    @include text-center;
     padding: 19px 0 57px 0;
-    background-color: #F7F7F7;
+    background-color: $bg-primary;
 }
 
 .reservation__title {
@@ -62,14 +60,8 @@ body {
     padding: 48px 0 68px 0;
 }
 
-.no-decoration {
-    list-style: none;
-    border-style: none;
-}
-
 .presentation__grid {
-    display: grid;
-    grid-template: auto / 1fr;
+    @include grid-column;
     gap: 24px;
     padding-inline-start: 0;
 
@@ -79,12 +71,13 @@ body {
 }
 
 .presentation__grid > li {
-    position: relative;
+    @include position-relative;
+    @include no-decoration;
 }
 
 .presentation__div__numbers {
-    position: absolute;
-    display: flex;
+    @include position-absolute;
+    @include flexbox;
     height: 100%;
 }
 
@@ -92,22 +85,21 @@ body {
     border-radius: 40px;
     padding: 1px 6px;
     margin: auto;
-    color: #FFFFFF;
-    background-color: #9356DC;
+    color: $color-primary;
+    background-color: $bg-presentation__numbers;
 }
 
 .presentation__steps {
-    background-color: #F7F7F7;
+    background-color: $bg-primary;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     padding: 27px 38px 25px 33px;
     margin-left: 7px;
-    display: flex;
-    align-items: center;
+    @include flexbox-center-cross-axis;
 }
 
 .bg-last-presentation {
-    background-color: #F5EDFF;
+    background-color: $bg-last-presentation;
 }
 
 .icon--padding {
