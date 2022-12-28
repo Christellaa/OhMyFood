@@ -1,6 +1,6 @@
 .back-button {
     position: absolute;
-    left: 0;
+    left: 3px;
     top: 10px;
     color: black;
     @include no-decoration;
@@ -13,5 +13,9 @@
         background-color: $color-primary;
         color: $bg-secondary;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    @include desktop {
+        top: 25px;
     }
 }
