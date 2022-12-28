@@ -8,13 +8,19 @@ main {
 
         @include desktop {
             grid-auto-flow: column;
+            grid-template: auto / repeat(4, 1fr);
             overflow-x: auto;
-            padding: 15px 0;
+            padding: 15px 10px;
             margin-right: 0;
+
+            &:hover::-webkit-scrollbar-thumb,
+            &:focus::-webkit-scrollbar-thumb,
+            &:active::-webkit-scrollbar-thumb {
+                visibility: visible;
+            }
 
             &::-webkit-scrollbar {
             height: 10px;
-
             }
             
             &::-webkit-scrollbar-thumb {
@@ -22,10 +28,6 @@ main {
             visibility: hidden;
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
             background-color: #b5b5b5;
-            
-                &:hover {
-                    visibility: visible;
-                }
             }
         }
     }
