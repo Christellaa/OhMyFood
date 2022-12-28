@@ -54,13 +54,13 @@ body {
 
 /*#endregion RESERVATION */
 
-/*#region PRESENTATION */
+/*#region FUNCTIONING */
 
-.presentation {
+.functioning {
     padding: 48px 0 68px 0;
 }
 
-.presentation__grid {
+.functioning__grid {
     @include grid-column;
     gap: 24px;
     padding-inline-start: 0;
@@ -70,18 +70,18 @@ body {
     }
 }
 
-.presentation__grid > li {
+.functioning__grid > li {
     @include position-relative;
     @include no-decoration;
 }
 
-.presentation__div__numbers {
+.functioning__div__numbers {
     @include position-absolute;
     @include flexbox;
     height: 100%;
 }
 
-.presentation__numbers {
+.functioning__numbers {
     border-radius: 40px;
     padding: 1px 6px;
     margin: auto;
@@ -89,7 +89,7 @@ body {
     background-color: $bg-secondary;
 }
 
-.presentation__steps {
+.functioning__steps {
     background-color: $bg-primary;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
@@ -98,12 +98,12 @@ body {
     @include flexbox-center-cross-axis;
 }
 
-.bg-last-presentation {
-    background-color: $bg-last-presentation;
+.bg-last-functioning {
+    background-color: $bg-last-functioning;
 }
 
 .icon--padding {
     padding-right: 27px;
 }
 
-/*#endregion PRESENTATION*/
+/*#endregion FUNCTIONING*/
