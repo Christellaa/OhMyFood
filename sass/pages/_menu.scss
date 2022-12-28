@@ -14,7 +14,13 @@
     border-radius: 40px 40px 0 0;
     position: relative;
     top: 210px;
-    padding: 0 13px 40px 13px;
+    padding: 8px 13px 40px 13px;
+
+    @include desktop {
+        margin-left: 7%;
+        margin-right: 7%;
+        padding: 28px 10% 40px 10%;
+    }
 }
 
 .menu__img-container {
@@ -33,6 +39,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include desktop {
+        justify-content: center;
+        gap: 25px;
+    }
 }
 
 .container__menu__subtitle {
