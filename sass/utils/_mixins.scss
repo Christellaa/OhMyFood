@@ -78,3 +78,7 @@
 @mixin cursor-pointer {
     cursor: pointer;
 }
+
+@mixin capital-letter {
+    text-transform: uppercase;
+}

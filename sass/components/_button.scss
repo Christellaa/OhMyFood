@@ -1,6 +1,5 @@
 .button {
     @include button-border-radius;
-    padding: 13px 20px;
     color: $color-primary;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     background-image: $bg-gradient;
@@ -13,4 +12,13 @@
         opacity: 0.8;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
     }
+}
+
+.home__button {
+    padding: 13px 20px;
+}
+
+.menu__button {
+    text-align: center;
+    padding: 13px 40px;
 }

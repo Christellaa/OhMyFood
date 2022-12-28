@@ -81,39 +81,8 @@ main {
     margin: 0;
 }
 
-.fa-heart {
+.home__heart {
     @include position-absolute;
-    font-size: 30px;
     right: 30px;
-    bottom: 10px;    
-
-    &:hover {
-    background: linear-gradient(200deg,
-        rgba(155, 89, 220, 1) 0%,
-        rgba(167, 127, 216, 1) 25%,
-        rgba(255, 121, 218, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    animation: heart-fill 500ms;
-    @include cursor-pointer;
-    }
-}
-
-@keyframes heart-fill {
-    0% {
-        opacity: 0;
-    }
-
-    30% {
-        opacity: 0.5;
-    }
-
-    80% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
+    bottom: 10px;
 }

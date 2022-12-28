@@ -1,8 +1,17 @@
 .back-button {
-    background-color: $color-primary;
-    @include button-border-radius;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: black;
     @include no-decoration;
     padding: 14px 16px;
     @include cursor-pointer;
+    @include button-border-radius;
+    transition: background-color 1s, color 1s, box-shadow 1s;
+    
+    &:hover {
+        background-color: $color-primary;
+        color: $bg-secondary;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
 }

@@ -1,0 +1,41 @@
+.dish__grid {
+    display: grid;
+    grid-template: auto / 1fr;
+    gap: 12px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.dish__card__container {
+    box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+    padding: 12px 20px 12px 10px;
+    position: relative;
+    transition: padding-right 1s;
+    
+    &:hover {
+        padding-right: 80px;
+    }
+}
+
+.dish__card__title {
+    margin: 0;
+}
+
+.dish__card__desc--space {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.dish__card__desc {
+    margin: 0;
+    display: inline-block;
+    
+}
+
+.dish__price {
+    text-align: right;
+    display: inline-block;
+    margin: 0;
+}
