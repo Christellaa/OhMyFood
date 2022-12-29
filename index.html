@@ -10,57 +10,57 @@
         
         <body>
             <div class="loader">
-                <div class="loader__items">
-                    <div class="loader__items__cloche__top"></div>
+                <div class="loader__items position-relative grid">
+                    <div class="loader__items__cloche__top position-relative"></div>
                     <div class="loader__items__cloche"></div>
-                    <i class="fa-solid fa-bell"></i>
-                    <div class="loader__items__plate__top"></div>
+                    <i class="fa-solid fa-bell position-absolute"></i>
+                    <div class="loader__items__plate__top position-absolute"></div>
                     <div class="loader__items__plate"></div>
-                    <div class="loader__items__plate__shadow"></div>
+                    <div class="loader__items__plate__shadow position-absolute"></div>
                 </div>
             </div>
 
-            <header>
+            <header class="position-relative">
                 <h1 class="font-tertiary logo">ohmyfood</h1>
             </header>
 
-            <section class="bg-position">
+            <section class="bg-position text-center">
                 <i class="fa-solid fa-location-dot icon "></i>
                 <input type="search" class="size-tertiary font-primary position__text" value="Paris, Belleville" placeholder="Choisir une ville">
             </section>
 
-            <section class="reservation">
+            <section class="reservation text-center">
                 <h1 class="title--size title--font reservation__title edges--margin">Réservez le menu qui vous convient</h1>
                 <p class="size-primary font-secondary reservation__desc edges--margin">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button class="size-tertiary font-primary button home__button">Explorer nos restaurants</button>
+                <button class="size-tertiary font-primary button cursor-pointer home__button">Explorer nos restaurants</button>
             </section>
 
             <section class="functioning edges--margin">
                 <h2 class="title--size title--font ">Fonctionnement</h2>
-                <ul class="size-tertiary font-primary functioning__grid">
-                    <li>
-                        <div class="functioning__numbers__container">
+                <ul class="size-tertiary font-primary functioning__grid grid">
+                    <li class="position-relative">
+                        <div class="functioning__numbers__container position-absolute flexbox">
                             <p class="functioning__numbers">1</p>
                         </div>
-                        <div class="functioning__steps">
+                        <div class="functioning__steps flexbox">
                             <i class="fa-solid fa-mobile-screen-button fa-lg icon icon--padding"></i>
                             Choisissez un restaurant
                         </div>
                     </li>
-                    <li>
-                        <div class="functioning__numbers__container">
+                    <li class="position-relative">
+                        <div class="functioning__numbers__container position-absolute flexbox">
                             <p class="functioning__numbers">2</p>
                         </div>
-                        <div class="functioning__steps">
+                        <div class="functioning__steps flexbox">
                             <i class="fa-solid fa-list fa-lg icon icon--padding"></i>
                             Composez votre menu
                         </div>
                     </li>
-                    <li class="bg-last-functioning">
-                        <div class="functioning__numbers__container">
+                    <li class="position-relative">
+                        <div class="functioning__numbers__container position-absolute flexbox">
                             <p class="functioning__numbers">3</p>
                         </div>
-                        <div class="functioning__steps">
+                        <div class="functioning__steps flexbox">
                             <i class="fa-solid fa-store fa-lg icon icon--padding"></i>
                             Dégustez au restaurant
                         </div>
@@ -70,56 +70,56 @@
 
             <main>
                 <h2 class="title--size title--font edges--margin">Restaurants</h2>
-                <div class="restaurants__grid edges--margin">
-                    <article class="restaurants__card">
-                        <a class="restaurants__card__container" href="restaurants/la-palette-du-gout.html">
-                            <p class="restaurants__new">Nouveau</p>
+                <div class="restaurants__grid grid edges--margin">
+                    <article class="restaurants__card position-relative">
+                        <a class="restaurants__card__container position-relative" href="restaurants/la-palette-du-gout.html">
+                            <p class="restaurants__new cursor-pointer position-absolute">Nouveau</p>
                             <img class="restaurants__card__img" src="img/palette-du-gout.png" alt="">
-                            <div class="restaurants__card__desc">
+                            <div class="restaurants__card__desc position-relative flexbox">
                                 <h3 class="size-primary title--font restaurants__card__title">La palette du goût</h3>
                                 <p class="size-secondary restaurants__card__location">Ménilmontant</p>
-                                <div class="heart_container">
-                                    <i class="icon fas fa-heart"></i>
-                                    <i class="icon icon-noBg far fa-heart"></i>
+                                <div class="heart_container position-relative cursor-pointer">
+                                    <i class="icon fas fa-heart position-absolute"></i>
+                                    <i class="icon icon-noBg far fa-heart position-absolute"></i>
                                 </div>
                             </div>
                             
                               
                         </a>
                     </article>
-                    <article class="restaurants__card">
+                    <article class="restaurants__card position-relative">
                         <a href="la-note-enchantee.html">
-                            <p class="restaurants__new">Nouveau</p>
+                            <p class="restaurants__new cursor-pointer position-absolute">Nouveau</p>
                             <img class="restaurants__card__img" src="img/note-enchantee.png" alt="">
                             <div>
-                                <div class="restaurants__card__desc">
+                                <div class="restaurants__card__desc position-relative flexbox">
                                     <h3 class="size-primary restaurants__card__title">La note enchantée</h3>
                                     <p class="size-secondary restaurants__card__location">Charonne</p>
-                                    <i class="fa-regular fa-heart home__heart"></i>
+                                    <i class="fa-regular fa-heart position-absolute home__heart position-absolute"></i>
                                 </div>
                             </div>
                         </a>
                     </article>
-                    <article class="restaurants__card">
+                    <article class="restaurants__card position-relative">
                         <a href="a-la-francaise.html">
                             <img class="restaurants__card__img" src="img/a-la-francaise.png" alt="">
                             <div>
-                                <div class="restaurants__card__desc">
+                                <div class="restaurants__card__desc position-relative flexbox">
                                     <h3 class="size-primary restaurants__card__title">À la française</h3>
                                     <p class="size-secondary restaurants__card__location">Cité Rouge</p>
-                                    <i class="fa-regular fa-heart home__heart"></i>
+                                    <i class="fa-regular fa-heart position-absolute home__heart position-absolute"></i>
                                 </div>
                             </div>
                         </a>
                     </article>
-                    <article class="restaurants__card">
+                    <article class="restaurants__card position-relative">
                         <a href="le-delice-des-sens">
                             <img class="restaurants__card__img" src="img/delice-des-sens.png" alt="">
                             <div>
-                                <div class="restaurants__card__desc">
+                                <div class="restaurants__card__desc position-relative flexbox">
                                     <h3 class="size-primary restaurants__card__title">Le délice des sens</h3>
                                     <p class="size-secondary restaurants__card__location">Folie-Méricourt</p>
-                                    <i class="fa-regular fa-heart home__heart"></i>
+                                    <i class="fa-regular fa-heart position-absolute home__heart position-absolute"></i>
                                 </div>
                             </div>
                         </a>
@@ -128,8 +128,8 @@
             </main>
 
             <footer>
-                <p class="font-tertiary logo footer__logo">Ohmyfood</p>
-                <nav class="size-tertiary direction-column">
+                <p class="font-tertiary logo footer__logo position-relative">Ohmyfood</p>
+                <nav class="size-tertiary direction-column flexbox">
                     <a href="#" class="font-primary footer--margin">
                         <i class="fa-solid fa-utensils fa-sm footer__icon"></i>Proposer un restaurant
                     </a>

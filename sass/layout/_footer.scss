@@ -4,7 +4,8 @@ footer {
     background-color: $color-tertiary;
 
     @include desktop {
-        @include flexbox-center-cross-axis;
+        display: flex;
+        align-items: center;
         justify-content: flex-end;
         padding: 52px 0 43px 10px;
     }
@@ -22,7 +23,6 @@ footer a {
     @include desktop {
         order: 2;
         margin: 0 10% 0 70px;
-        @include position-relative;
         top: 1.2;
     }
 }
@@ -41,10 +41,10 @@ footer a {
 }
 
 .direction-column {
-    @include direction-column;
+    flex-direction: column;
     @include desktop {
-        @include direction-row;
-        @include flexbox-center-cross-axis;
+        flex-direction: row;
+        align-items: center;
         gap: 40px;
     }
 }

@@ -3,7 +3,7 @@ main {
     padding: 54px 0 64px 0;
 
     .restaurants__grid {
-        @include grid-column;
+        grid-template: auto / 1fr;
         gap: 24px;
 
         @include desktop {
@@ -37,7 +37,6 @@ main {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     height: 251px;
-    @include position-relative;
 
     @include desktop {
         width: 335px;
@@ -52,7 +51,6 @@ main {
 }
 
 .restaurants__new {
-    @include position-absolute;
     right: 15px;
     padding: 8px 12px;
     border-radius: 2px;
@@ -60,14 +58,12 @@ main {
     color: $color-secondary;
     font-size: 14px;
     background-color: #99E2D0;
-    @include cursor-pointer;
 }
 
 .restaurants__card__desc {
     margin-left: 13px;
     margin-bottom: 12px;
-    @include direction-column;
-    @include position-relative;
+    flex-direction: column;
     color: #000000;
 }
 
@@ -84,7 +80,6 @@ main {
 }
 
 .home__heart {
-    @include position-absolute;
     right: 30px;
     bottom: 10px;
 }

@@ -1,12 +1,10 @@
 .back-button {
-    position: absolute;
     left: 3px;
     top: 10px;
     color: black;
     @include no-decoration;
     padding: 14px 16px;
-    @include cursor-pointer;
-    @include button-border-radius;
+    border-radius: 25px;
     transition: background-color 1s, color 1s, box-shadow 1s;
     
     &:hover {

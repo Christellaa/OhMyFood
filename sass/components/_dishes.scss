@@ -1,5 +1,4 @@
 .dish__grid {
-    display: grid;
     grid-template: auto / 1fr;
     gap: 12px;
     margin-top: 12px;
@@ -10,7 +9,6 @@
     box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
     border-radius: 15px;
     padding: 12px 20px 12px 10px;
-    position: relative;
     transition: padding-right 1s;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -29,7 +27,6 @@
 }
 
 .dish__card__desc--space {
-    display: flex;
     justify-content: space-between;
     margin-top: 5px;
 }

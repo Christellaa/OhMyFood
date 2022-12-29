@@ -15,7 +15,6 @@ body {
 
 .bg-position {
     background-color: $bg-position;
-    @include text-center;
     height: 50px;
     @include flexbox-center;
     gap: 17px;
@@ -38,7 +37,6 @@ body {
 /*#region RESERVATION */
 
 .reservation {
-    @include text-center;
     padding: 19px 0 57px 0;
     background-color: $bg-primary;
 }
@@ -61,7 +59,7 @@ body {
 }
 
 .functioning__grid {
-    @include grid-column;
+    grid-template: auto / 1fr;
     gap: 24px;
     padding-inline-start: 0;
 
@@ -71,17 +69,18 @@ body {
 }
 
 .functioning__grid > li {
-    @include position-relative;
     @include no-decoration;
     background-color: $bg-primary;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     margin-left: 10px;
+
+    &:last-child {
+        background-color: $bg-last-functioning;
+    }
 }
 
 .functioning__numbers__container {
-    @include position-absolute;
-    @include flexbox;
     height: 100%;
     margin-left: -10px;
 }
@@ -96,11 +95,7 @@ body {
 
 .functioning__steps {
     padding: 27px 38px 25px 33px;
-    @include flexbox-center-cross-axis;
-}
-
-.bg-last-functioning {
-    background-color: $bg-last-functioning;
+    align-items: center;
 }
 
 .icon--padding {

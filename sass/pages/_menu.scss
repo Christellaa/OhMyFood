@@ -3,7 +3,7 @@
 }
 
 .menu__subtitle {
-    @include capital-letter;
+    text-transform: uppercase;
 }
 
 .menu__price {
@@ -13,7 +13,6 @@
 .menu__main {
     border-radius: 40px 40px 0 0;
     padding: 8px 13px 40px 13px;
-    position: relative;
     margin-top: -70px;
 
     @include desktop {
@@ -30,10 +29,8 @@
 }
 
 .menu__heading {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 
     @include desktop {
         justify-content: center;

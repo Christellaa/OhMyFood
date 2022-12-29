@@ -17,7 +17,6 @@
 }
 
 .fa-bell {
-    @include position-absolute;
     top: 40px;
     font-size: 50px;
     z-index: -1;
@@ -40,9 +39,7 @@
 }
 
 .loader__items {
-    @include grid;
     justify-items: center;
-    @include position-relative;
 }
 
 .loader__items__cloche__top {
@@ -51,7 +48,6 @@
     width: 20px;
     border-radius: 100% 100% 0 0;
     clip-path: polygon(50% 0%,100% 16%,63% 55%,100% 94%,50% 100%,0% 94%,39% 55%,0% 16%);
-    @include position-relative;
     top: 2px;
     animation: open-cloche-top 3s cubic-bezier(.51,.02,.3,1.09) forwards;
 }
@@ -91,7 +87,6 @@
     height: 10px;
     width: 220px;
     border-radius: 10px 10px 100px 100px;
-    @include position-absolute;
     top: 98px;
 }
 
@@ -107,7 +102,6 @@
     width: 180px;
     height: 10px;
     border-radius: 80%;
-    @include position-absolute;
     top: 113px;
     z-index: -1;
 }
