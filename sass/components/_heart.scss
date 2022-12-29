@@ -1,33 +1,41 @@
+.heart_container {
+  background-color: #000000;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+}
+  
+.heart_container:hover::before {
+  opacity: 1;
+}
+      
+.heart_container::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $bg-gradient-heart;
+}
+      
 .fa-heart {
-    font-size: 30px;
-
-    &:hover {
-    background: linear-gradient(200deg,
-        rgba(155, 89, 220, 1) 0%,
-        rgba(167, 127, 216, 1) 25%,
-        rgba(255, 121, 218, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    animation: heart-fill 500ms;
-    @include cursor-pointer;
-    }
+  transition-duration: .25s;
+  background-color: $bg-primary;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: lighten;
 }
 
-@keyframes heart-fill {
-    0% {
-        opacity: 0;
-    }
+.heart_container:hover > .icon-noBg {
+  opacity: 0;
+}
 
-    30% {
-        opacity: 0.5;
-    }
 
-    80% {
-        opacity: 0.8;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.menu__heart {
+  margin-right: 25px;
 }
