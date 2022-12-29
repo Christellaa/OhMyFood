@@ -73,12 +73,17 @@ body {
 .functioning__grid > li {
     @include position-relative;
     @include no-decoration;
+    background-color: $bg-primary;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    margin-left: 10px;
 }
 
-.functioning__div__numbers {
+.functioning__numbers__container {
     @include position-absolute;
     @include flexbox;
     height: 100%;
+    margin-left: -10px;
 }
 
 .functioning__numbers {
@@ -90,11 +95,7 @@ body {
 }
 
 .functioning__steps {
-    background-color: $bg-primary;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     padding: 27px 38px 25px 33px;
-    margin-left: 7px;
     @include flexbox-center-cross-axis;
 }
 
