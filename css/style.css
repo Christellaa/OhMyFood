@@ -390,7 +390,7 @@ main .restaurants__grid {
 }
 
 .dish__card__container .fa-circle-check {
-  transition: opacity 1s, padding-left 1s, padding-right 1s, transform 1s;
+  transition: opacity 1s, padding-left 1s, padding-right 1s;
   opacity: 0;
 }
 
