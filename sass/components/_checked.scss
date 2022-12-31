@@ -1,12 +1,12 @@
+.dish__card__container .fa-circle-check {
+    transition: opacity 1s, padding-left 1s, padding-right 1s, transform 1s;
+    opacity: 0;
+}
+    
 .dish__card__container:hover .fa-circle-check {
     opacity: 1;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-.dish__card__container .fa-circle-check {
-transition: opacity 1s, padding-left 1s, padding-right 1s;
-opacity: 0;
 }
 
 .fa-circle-check {
