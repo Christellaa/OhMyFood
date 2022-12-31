@@ -63,8 +63,8 @@ main {
 .restaurants__card__desc {
     margin-left: 13px;
     margin-bottom: 12px;
-    flex-direction: column;
     color: #000000;
+    justify-content: space-between;
 }
 
 .restaurants__card > a {

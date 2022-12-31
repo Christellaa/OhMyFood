@@ -279,8 +279,8 @@ main .restaurants__grid {
 .restaurants__card__desc {
   margin-left: 13px;
   margin-bottom: 12px;
-  flex-direction: column;
   color: #000000;
+  justify-content: space-between;
 }
 
 .restaurants__card > a {
@@ -337,6 +337,11 @@ main .restaurants__grid {
 
 .heart_container:hover > .icon-noBg {
   opacity: 0;
+}
+
+.home__heart {
+  margin-top: 20px;
+  margin-right: 25px;
 }
 
 .menu__heart {
