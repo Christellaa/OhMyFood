@@ -26,6 +26,12 @@ body {
     width: 135px;
     color: $color-tertiary;
     font-family: 'Roboto', sans-serif;
+
+    &:hover,
+    &:focus {
+        border: 2px inset #474d48;
+        height: 80%;
+    }
     
     &:focus-visible {
         outline: none;
