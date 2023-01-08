@@ -134,7 +134,7 @@ body {
   box-shadow: inset 7px 0px 7px 0px rgba(194, 76, 237, 0.7607843137);
   height: 90px;
   border-radius: 100px 100px 0 0;
-  width: -webkit-fill-available;
+  width: 100%;
   animation: open-cloche 3s cubic-bezier(0.51, 0.02, 0.3, 1.09) forwards;
 }
 
@@ -233,6 +233,10 @@ main .restaurants__grid {
     overflow-x: auto;
     padding: 15px 10px;
     margin-right: 0;
+    scrollbar-width: none;
+  }
+  main .restaurants__grid:hover {
+    scrollbar-width: thin;
   }
   main .restaurants__grid:hover::-webkit-scrollbar-thumb, main .restaurants__grid:focus::-webkit-scrollbar-thumb, main .restaurants__grid:active::-webkit-scrollbar-thumb {
     visibility: visible;
@@ -311,8 +315,9 @@ main .restaurants__grid {
 .heart_container {
   background-color: #000000;
   font-size: 30px;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
 }
 
 .heart_container:hover::before {
@@ -422,7 +427,7 @@ main .restaurants__grid {
 
 .container-interval1, .interval1 {
   opacity: 0;
-  animation: interval 500ms forwards;
+  animation: interval 500ms 0ms forwards;
 }
 
 .interval__sub1 {
@@ -615,6 +620,10 @@ body {
   color: #353535;
   font-family: "Roboto", sans-serif;
 }
+.position__text:hover, .position__text:focus {
+  border: 2px inset #474d48;
+  height: 80%;
+}
 .position__text:focus-visible {
   outline: none;
 }
@@ -714,7 +723,7 @@ body {
 }
 
 .menu__img {
-  width: -webkit-fill-available;
+  width: 100%;
   object-fit: cover;
   height: 275px;
 }
