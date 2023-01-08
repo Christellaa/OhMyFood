@@ -31,3 +31,9 @@
         text-decoration: underline;
     }
 }
+
+@mixin intervals($delay: 0ms) {
+    opacity: 0;
+    animation: interval 500ms $delay forwards;
+}
+
