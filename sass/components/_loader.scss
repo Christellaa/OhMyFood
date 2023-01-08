@@ -67,7 +67,7 @@
     box-shadow: inset 7px 0px 7px 0px #c24cedc2;
     height: 90px;
     border-radius: 100px 100px 0 0;
-    width: -webkit-fill-available;
+    width: 100%;
     animation: open-cloche 3s cubic-bezier(.51,.02,.3,1.09) forwards;
 }
 
