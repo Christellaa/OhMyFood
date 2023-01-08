@@ -33,4 +33,4 @@ In VSCode terminal:
 
 
 ## The project is also on Github Pages:
-https://christellaa.github.io/OhMyFood/
+https://christellaa.github.io/ohmyfood/
