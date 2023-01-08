@@ -1,35 +1,36 @@
 # OhMyFood
-OpenClassrooms - Intégrateur Web
-Projet 4 - Améliorez l'interface d'un site mobile avec des animations CSS
 
-But du projet:
-Créer en mobile first, puis en version desktop, la page d'accueil et 4 pages de menu de la startup OhMyFood.
-La page d'accueil doit avoir un loader.
-Il doit y avoir des transitions/animations sur les coeurs et pour un défilement du menu.
-Seuls le HTML et le CSS doivent être utilisés. Possibilité d'utiliser Sass également.
+## About the project:
 
+Project 4 of the course Intégrateur Web of Openclassrooms.
 
-Tools used:
-- HTML
-- Sass
-- Git
-- VSCode
+The goal is to create in mobile first, then in desktop version, the homepage and 4 menu pages for the startup OhMyFood.
+The homepage must have a loader. Also, transitions/animations should be used for heart icons, and to create a menu scrolling in the menu pages.
+
+Only HTML, CSS and eventually Sass can be used.
 
 
-Sass Setup:
+## Tools used:
+* HTML
+* Sass
+* Git
+* VSCode
+
+
+## Sass Setup:
 In Windows command prompt:
-- install NodeJS
-- npm -g install sass
+- `` install NodeJS ``
+- `` npm -g install sass ``
 
 In VSCode terminal:
-- npm package.json
-- npm init
-- npm install -g sass
+- `` npm package.json ``
+- `` npm init ``
+- `` npm install -g sass ``
 
 
-Clone the project:
-git clone https://github.com/Christellaa/OhMyFood.git
+## Clone the project:
+`` git clone https://github.com/Christellaa/OhMyFood.git ``
 
 
-The project is also on Github Pages:
+## The project is also on Github Pages:
 https://christellaa.github.io/OhMyFood/
