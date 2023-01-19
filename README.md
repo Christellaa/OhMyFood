@@ -32,5 +32,10 @@ In VSCode terminal:
 `` git clone https://github.com/Christellaa/OhMyFood.git ``
 
 
+## Open the projet:
+- Use LiveServer extension on VSCode
+- Drag and drop in your browser
+
+
 ## The project is also on Github Pages:
 https://christellaa.github.io/ohmyfood/
