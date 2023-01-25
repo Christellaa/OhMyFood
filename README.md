@@ -29,7 +29,7 @@ In VSCode terminal:
 
 
 ## Clone the project:
-`` git clone https://github.com/Christellaa/OhMyFood.git ``
+`` git clone https://github.com/Christellaa/ohmyfood.git ``
 
 
 ## Open the projet:
